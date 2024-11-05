@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "$schemaVersion": "0.0.1",
-  "$id": "https://github.com/los-ccg/texpact-ccg-demo/Production/ProductionOrder/blob/master/schema.json",
+  "$id": "https://raw.githubusercontent.com/los-ccg/texpact-ccg-demo/refs/heads/main/Production/ProductionOrder/schema.json",
   "title": "Smart Data Models - Texpact - CCG / ZGDV Institute Demo - Production Order",
   "description": "Simple Production Order",
   "modelTags": "",
