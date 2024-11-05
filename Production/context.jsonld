@@ -1,0 +1,12 @@
+{
+    "@context": {
+        "ProductionOrder": "https://github.com/los-ccg/texpact-ccg-demo/Production/ProductionOrder",
+        "data": "ngsi-ld:data",
+        "date": "https://schema.org/Date",
+        "description": "http://purl.org/dc/terms/description",
+        "id": "@id",
+        "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
+        "type": "@type"
+       
+    }
+}

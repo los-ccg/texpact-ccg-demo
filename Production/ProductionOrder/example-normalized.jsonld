@@ -1,0 +1,49 @@
+{
+    "@context": [
+        "https://forge.etsi.org/gitlab/NGSI-LD/NGSI-LD/raw/master/coreContext/ngsi-ld-core-context.json",
+        "https://github.com/los-ccg/texpact-ccg-demo/Production/blob/master/context.jsonld"
+    ],
+    "id": "urn:ngsi-ld:ProductionOrder:000001",
+    "type": "ProductionOrder",
+    "upc": {
+      "type": "Property",
+      "value": "248605298955"
+    },
+    "quantity": {
+      "type": "Property",
+      "value": 413
+    },
+    "producedQuantity":{
+      "type": "Property",
+      "value": 10
+    },
+    "status": {
+      "type": "Property",
+      "value": "Released"
+    },
+    "startDatePlan":{
+      "type": "Property",
+      "value": "2024-01-22"
+    }, 
+    "startDateReal":{
+      "type": "Property",
+      "value": "2024-01-22"
+    },
+    "endDatePlan":{
+      "type": "Property",
+      "value": "2024-01-22"
+    }, 
+    "endDateReal":{
+      "type": "Property",
+      "value": "2024-01-22"
+    },
+    "dueDate": {
+      "type": "Property",
+      "value": "2024-01-22"
+    },
+    "parentOP": {
+      "type": "Relationship",
+      "value": null
+    }
+  }
+  

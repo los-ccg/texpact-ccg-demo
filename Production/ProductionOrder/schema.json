@@ -1,0 +1,175 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "https://github.com/los-ccg/texpact-ccg-demo/Production/ProductionOrder/blob/master/schema.json",
+  "title": "Smart Data Models - Texpact - CCG / ZGDV Institute Demo - Production Order",
+  "description": "Simple Production Order",
+  "modelTags": "",
+  "derivedFrom": "",
+  "license": "",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "ProductionOrder"
+          ],
+          "description": "Property. NGSI Entity type"
+        },
+        "upc": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "Property"
+              ]
+            },
+            "value": {
+              "type": "string"
+            }
+          }
+        },
+        "quantity": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "Property"
+              ]
+            },
+            "value": {
+              "type": "integer"
+            }
+          }
+        },
+        "producedQuantity": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "Property"
+              ]
+            },
+            "value": {
+              "type": "integer"
+            }
+          }
+        },
+        "status": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "Property"
+              ]
+            },
+            "value": {
+              "type": "string"
+            }
+          }
+        },
+        "startDatePlan": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "Property"
+              ]
+            },
+            "value": {
+              "type": "string",
+              "format": "date",
+              "description": "Property. Model:'https://schema.org/Date'. The date and time the forecast was issued by the ML  in ISO8601 UTC format"
+            }
+          }
+        },    
+        "endDatePlan": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "Property"
+              ]
+            },
+            "value": {
+              "type": "string",
+              "format": "date",
+              "description": "Property. Model:'https://schema.org/Date'. The date and time the forecast was issued by the ML  in ISO8601 UTC format"
+            }
+          }
+        },  
+        "startDateReal": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "Property"
+              ]
+            },
+            "value": {
+              "type": "string",
+              "format": "date",
+              "description": "Property. Model:'https://schema.org/Date'. The date and time the forecast was issued by the ML  in ISO8601 UTC format"
+            }
+          }
+        },    
+        "endDateReal": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "Property"
+              ]
+            },
+            "value": {
+              "type": "string",
+              "format": "date",
+              "description": "Property. Model:'https://schema.org/Date'. The date and time the forecast was issued by the ML  in ISO8601 UTC format"
+            }
+          }
+        },    
+        "dueDate": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "Property"
+              ]
+            },
+            "value": {
+              "type": "string",
+              "format": "date",
+              "description": "Property. Model:'https://schema.org/Date'. The date and time the forecast was issued by the ML  in ISO8601 UTC format"
+            }
+          }
+        },    
+        "ParentOP": {
+          "description": "Relationship. ProductionOrder identifier which is parent of this OP.",
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "uuid"
+            },
+            {
+              "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
